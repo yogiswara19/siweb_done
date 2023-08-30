@@ -1,0 +1,38 @@
+<?= $this->extend('layout/template') ?>
+
+<?= $this->section('content') ?>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4"><?= strtoupper($title) ?></h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">Pengelolaan <?= $title ?></li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Detail <?= $title ?>
+            </div>
+            <div class="card-body">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex flex-column align-item-center justify-content-center">
+                            <img src="<?= base_url('img/' . $data_book['cover']) ?>" alt="" class="img-fluid rounded-start mx-auto d-block p-3 border border-secondary border-3">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $data_book['title'] ?></h5>
+                                <p class="card-text">Penulis: <?= $data_book['author'] ?></p>
+                                <p class="card-text">Tahun Terbit: <?= $data_book['release_year'] ?></p>
+                                <p class="card-text">Harga: <?= $data_book['price'] ?></p>
+                                <p class="card-text">Stok: <?= $data_book['stock'] ?></p>
+                                <p class="card-text">Diskon: <?= $data_book['discount'] ?></p>
+                                <a href="/komik" class="btn btn-dark"><i class="fas fa-arrow-left"></i> Kembali</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<?= $this->endsection() ?>
