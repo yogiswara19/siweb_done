@@ -109,6 +109,25 @@
         load();
     });
 
+    $(this).keydown(function(e) {
+        if (e.keyCode === 80) {
+            e.preventDefault();
+            $('#modalProduk').modal('show')
+        }
+        if (e.keyCode === 67) {
+            e.preventDefault();
+            $('#modalCust').modal('show')
+        }
+        if (e.keyCode === 78) {
+            e.preventDefault();
+            $('#nominal').focus()
+        }
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            bayar()
+        }
+    });
+
     //Ubah Jumlah Item
     $(document).on('click', '.ubah_cart', function() {
         var row_id = $(this).attr("id");

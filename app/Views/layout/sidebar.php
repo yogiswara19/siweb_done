@@ -73,7 +73,7 @@
                             </a>
                         <?php endif ?>
 
-                        <div class="sb-sidenav-menu-heading">Addons</div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div>
                         <a class="nav-link" href="/container">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Tugas Container
@@ -81,7 +81,7 @@
                         <a class="nav-link" href="/tugas2">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Tugas 2
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
